@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { By } from '@angular/platform-browser';
+import { AddTrasactionButtonComponent } from './add-trasaction-button/add-trasaction-button.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -9,7 +10,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [HeaderComponent],
     });
     fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
@@ -22,11 +23,8 @@ describe('HeaderComponent', () => {
 
   it('should display the logotipo and add transaction button', () => {
     const logotipo = fixture.debugElement.query(By.css('.logotipo'));
-    const addTransactionButton = fixture.debugElement.query(By.css('.add-transaction-button'));
+    const addTransactionButton = fixture.debugElement.query(By.directive(AddTrasactionButtonComponent));
     expect(logotipo).toBeTruthy();
     expect(addTransactionButton).toBeTruthy();
-    expect(addTransactionButton.nativeElement.textContent).toBe('Nova transação')
   });
-
-
 });

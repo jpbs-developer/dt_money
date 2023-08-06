@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ValueCardsComponent } from './value-cards.component';
 import { By } from '@angular/platform-browser';
 import { ValueCardComponent } from './value-card/value-card.component';
+import { NgOptimizedImage } from '@angular/common';
 
 describe('ValueCardsComponent', () => {
   let component: ValueCardsComponent;
@@ -10,7 +11,7 @@ describe('ValueCardsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ValueCardsComponent]
+      imports: [ValueCardsComponent, NgOptimizedImage]
     });
     fixture = TestBed.createComponent(ValueCardsComponent);
     component = fixture.componentInstance;

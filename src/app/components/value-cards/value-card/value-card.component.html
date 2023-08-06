@@ -1,4 +1,9 @@
-<div class="bg-black-100 pl-9 py-6 pr-6 rounded-3xl">
-  <h2 class="title text-gray-100">{{ title }}</h2>
-  <h2 class="value text-gray-200 text-3xl mt-3">{{ value | currency: 'BRL'}}</h2>
+<div class="bg-gray-400 pl-8 py-6 pr-6 rounded-md" [style.background-color]="bg">
+  <div>
+    <article class="flex items-center justify-between">
+      <h4 class="title text-gray-600">{{ title }}</h4>
+      <img [src]="icon" height="32" width="32" alt="icon">
+    </article>
+    <h2 class="value text-gray-700 text-3xl mt-3 font-bold">{{ value | currency: 'BRL'}}</h2>
+  </div>
 </div>

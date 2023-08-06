@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ValueCardComponent } from './value-card.component';
 import { By } from '@angular/platform-browser';
+import { NgOptimizedImage } from '@angular/common';
 
 describe('ValueCardComponent', () => {
   let component: ValueCardComponent;
@@ -9,7 +10,7 @@ describe('ValueCardComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ValueCardComponent]
+      imports: [ValueCardComponent, NgOptimizedImage]
     });
     fixture = TestBed.createComponent(ValueCardComponent);
     component = fixture.componentInstance;
@@ -30,7 +31,7 @@ describe('ValueCardComponent', () => {
     component.value = 300
     fixture.detectChanges();
     const value = fixture.debugElement.query(By.css('.value')).nativeElement as HTMLElement
-    expect(value.textContent?.trim()).toBe('300')
+    expect(value.textContent?.trim()).toBe('R$300.00')
   });
 
 });

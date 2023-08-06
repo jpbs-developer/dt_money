@@ -33,7 +33,4 @@ describe('AddTrasactionButtonComponent', () => {
     expect(spy).toHaveBeenCalled()
   });
 
-
-
-
 });

@@ -20,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
       Nova transação
     </button>
   `,
+  styleUrls: ['./add-transaction-button.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AddTrasactionButtonComponent {

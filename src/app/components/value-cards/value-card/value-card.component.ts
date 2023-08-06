@@ -13,5 +13,5 @@ export class ValueCardComponent {
   @Input({ required: true }) title = '';
   @Input({ required: true }) icon = '';
   @Input({ required: true }) value = 0;
-  @Input() bg = '';
+  @Input() bg = '#323238';
 }

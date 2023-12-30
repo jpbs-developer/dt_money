@@ -1,0 +1,18 @@
+<div class="grid grid-cols-2 gap-5">
+  <button
+    type="button"
+    class="income"
+    [ngClass]="{ selected: type === 'income' }"
+    (click)="selectAndEmitValue('income')"
+  >
+    Entrada
+  </button>
+  <button
+    type="button"
+    [ngClass]="{ selected: type === 'expense' }"
+    (click)="selectAndEmitValue('expense')"
+    class="expense"
+  >
+    Saída
+  </button>
+</div>

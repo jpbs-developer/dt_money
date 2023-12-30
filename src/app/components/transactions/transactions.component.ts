@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Transaction, TransactionCardComponent } from './transaction-card/transaction-card.component';
 import { NgForOf } from '@angular/common';
+import { TableHeaderComponent } from './table-header/table-header.component';
 
 @Component({
   selector: 'app-transactions',
   standalone: true,
-  imports: [TransactionCardComponent, NgForOf],
+  imports: [TransactionCardComponent, NgForOf, TableHeaderComponent],
   templateUrl: './transactions.component.html',
   styleUrls: ['./transactions.component.scss']
 })

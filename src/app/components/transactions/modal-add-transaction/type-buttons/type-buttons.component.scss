@@ -1,0 +1,15 @@
+button {
+  @apply bg-gray-400 text-gray-600 p-4 rounded-md transition-colors hover:text-white;
+  &.income {
+    @apply hover:bg-green-300;
+    &.selected {
+      @apply bg-green-300 text-white;
+    }
+  }
+  &.expense {
+    @apply hover:bg-red-200;
+    &.selected {
+      @apply bg-red-200 text-white;
+    }
+  }
+}

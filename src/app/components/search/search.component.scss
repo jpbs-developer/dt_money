@@ -1,14 +1,4 @@
-.input-search {
-  @apply bg-gray-100 rounded-md p-4 text-gray-600 outline-none w-full;
 
-  &::placeholder {
-    @apply text-gray-500;
-  }
-
-  &:focus {
-    @apply outline-green-100;
-  }
-}
 
 .button-search {
   @apply border border-green-100 py-4 rounded-md text-green-100 w-36 transition-colors;

@@ -5,5 +5,5 @@
     'text-green-100': transaction.type == 'input',
   }">{{transaction.type == 'output' ? '- ' : ''}}{{ transaction.value | currency : "BRL" }}</p>
   <p class="category col-span-3 text-gray-600">{{ transaction.category }}</p>
-  <p class="date col-span-1 text-right text-gray-600">{{ transaction.date }}</p>
+  <p class="date col-span-1  text-gray-600">{{ transaction.date }}</p>
 </article>
